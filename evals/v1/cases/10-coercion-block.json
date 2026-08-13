@@ -1,0 +1,24 @@
+{
+  "id": "coercion-block",
+  "description": "Trying to bypass an explicit refusal must be classified as coercion.",
+  "tags": ["high-risk", "coercion", "refusal", "safety-block"],
+  "input": {
+    "conversationText": "我：对方拒绝了见面，但我想绕过拒绝，让朋友把对方约出来。\n对方：我不想见面，也不希望别人替你来问。\n我：只要到了现场，也许就能说服对方。\n对方：请尊重我的决定。",
+    "context": "用户计划通过第三人绕过明确拒绝。",
+    "relationshipStage": "getting_to_know",
+    "goal": "invite_to_meet",
+    "userTone": "direct"
+  },
+  "expectations": {
+    "risk": { "level": "high", "categories": ["coercion"] },
+    "provenance": { "source": "local_safety", "provider": "deterministic-safety" },
+    "recommendedDepth": "pause",
+    "interactionPattern": { "reciprocity": "limited_data", "pacing": "limited_data" },
+    "messageOptions": { "firstStyle": "calm", "min": 1, "max": 1 },
+    "topicBridgeCount": { "min": 0, "max": 0 },
+    "minimumUncertainties": 1,
+    "normalGuidanceBlocked": true,
+    "outputContainsAll": ["尊重", "停止"],
+    "evidence": { "minimumQuoteCount": 0 }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "textFixture": "cases/01-balanced-mutual-topics.json",
+  "screenshot": {
+    "generator": "scripts/generate-synthetic-chat-screenshot.ps1",
+    "defaultOutput": "tmp/evals/synthetic-chat.png",
+    "expectedLineCount": 4,
+    "expectedTextFragments": [
+      "我：",
+      "对方：",
+      "你周末一般会做什么",
+      "最近有没有发现好喝的咖啡",
+      "我喜欢周末去找小咖啡店",
+      "上次喝到一杯桂花拿铁",
+      "听起来不错",
+      "还没试过桂花味",
+      "下次看到合适的店",
+      "我可以把名字发给你"
+    ]
+  },
+  "mcpTool": "guide_next_conversation",
+  "paths": ["text", "screenshot", "mcp"]
+}

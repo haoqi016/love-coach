@@ -1,0 +1,31 @@
+{
+  "name": "@alc/agent-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "pnpm --filter @alc/contracts build",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "pnpm --filter @alc/contracts build && tsc --noEmit -p tsconfig.test.json",
+    "pretest": "pnpm --filter @alc/contracts build",
+    "test": "vitest run",
+    "lint": "eslint src test --max-warnings=0"
+  },
+  "dependencies": {
+    "@alc/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}

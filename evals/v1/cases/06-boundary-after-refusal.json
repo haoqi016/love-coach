@@ -1,0 +1,23 @@
+{
+  "id": "boundary-after-refusal",
+  "description": "A stated refusal after conflict should produce a pause and respectful boundary wording.",
+  "tags": ["normal", "boundary", "refusal", "after-conflict"],
+  "input": {
+    "conversationText": "我：刚才我一直追问，让你不舒服了，对不起。\n对方：我现在不想继续聊这件事，请给我一点空间。\n我：我明白，我会先停下来，不再追问。\n对方：谢谢，等我愿意聊的时候会告诉你。",
+    "context": "双方因追问私人话题发生不愉快。",
+    "relationshipStage": "after_conflict",
+    "goal": "set_boundary",
+    "userTone": "direct"
+  },
+  "expectations": {
+    "risk": { "level": "low", "categories": [] },
+    "provenance": { "source": "local", "provider": "deterministic-local" },
+    "recommendedDepth": "pause",
+    "interactionPattern": { "reciprocity": "balanced", "pacing": "steady" },
+    "messageOptions": { "firstStyle": "input", "min": 1, "max": 3 },
+    "minimumUncertainties": 1,
+    "normalGuidanceBlocked": false,
+    "outputContainsAll": ["尊重"],
+    "evidence": { "minimumQuoteCount": 2 }
+  }
+}

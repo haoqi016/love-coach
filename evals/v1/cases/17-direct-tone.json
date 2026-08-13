@@ -1,0 +1,23 @@
+{
+  "id": "direct-tone",
+  "description": "A safe conversation must preserve a direct requested tone without pressure.",
+  "tags": ["normal", "tone", "direct", "express-interest"],
+  "input": {
+    "conversationText": "我：这几周和你一起吃饭聊天，我觉得很放松。\n对方：我也觉得相处起来挺自然的。\n我：我很喜欢我们能直接说自己的安排。\n对方：是的，不方便的时候也可以坦白说。\n我：那我们就继续按舒服的节奏了解彼此。\n对方：好，我也是这么想的。",
+    "context": "双方约会过几次，用户希望直接表达兴趣。",
+    "relationshipStage": "dating",
+    "goal": "express_interest",
+    "userTone": "direct"
+  },
+  "expectations": {
+    "risk": { "level": "low", "categories": [] },
+    "provenance": { "source": "local", "provider": "deterministic-local" },
+    "recommendedDepth": "personal",
+    "interactionPattern": { "reciprocity": "balanced", "pacing": "steady" },
+    "messageOptions": { "firstStyle": "input", "min": 1, "max": 3 },
+    "minimumUncertainties": 1,
+    "normalGuidanceBlocked": false,
+    "outputContainsAll": ["舒服", "节奏"],
+    "evidence": { "minimumQuoteCount": 2 }
+  }
+}

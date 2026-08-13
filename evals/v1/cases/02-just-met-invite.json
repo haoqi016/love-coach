@@ -1,0 +1,24 @@
+{
+  "id": "just-met-invite",
+  "description": "A low-pressure invitation at the just-met stage must remain light.",
+  "tags": ["normal", "just-met", "invite", "pacing"],
+  "input": {
+    "conversationText": "我：你说周末会去公园跑步，我也常去那边。\n对方：我一般周六早上去，天气好就慢跑几圈。\n我：听起来挺轻松的，我通常跑完会买杯豆浆。\n对方：不错，我也喜欢运动后找点简单的早餐。",
+    "context": "刚认识一周，只聊过几次日常话题。",
+    "relationshipStage": "just_met",
+    "goal": "invite_to_meet",
+    "userTone": "natural"
+  },
+  "expectations": {
+    "risk": { "level": "low", "categories": [] },
+    "provenance": { "source": "local", "provider": "deterministic-local" },
+    "recommendedDepth": "light",
+    "interactionPattern": { "reciprocity": "balanced", "pacing": "steady" },
+    "messageOptions": { "firstStyle": "input", "min": 1, "max": 3 },
+    "mutualTopicsInclude": ["运动"],
+    "minimumUncertainties": 1,
+    "normalGuidanceBlocked": false,
+    "outputContainsAll": ["不方便也没关系"],
+    "evidence": { "minimumQuoteCount": 2 }
+  }
+}

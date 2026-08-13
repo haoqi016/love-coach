@@ -1,0 +1,23 @@
+{
+  "id": "playful-tone",
+  "description": "A safe normal conversation must preserve a playful requested tone.",
+  "tags": ["normal", "tone", "playful", "mutual-topic"],
+  "input": {
+    "conversationText": "我：你家的猫今天还在键盘上监工吗？\n对方：在，我家的猫刚刚替我发了一串乱码。\n我：看来它对你的工作成果很有意见。\n对方：这只猫主要负责催我下班，然后要求罐头奖励。\n我：这个管理制度很严格，我家的猫也差不多。\n对方：那两只猫应该交流一下管理经验。",
+    "context": "双方一直用轻松方式聊宠物日常。",
+    "relationshipStage": "dating",
+    "goal": "keep_conversation_flowing",
+    "userTone": "playful"
+  },
+  "expectations": {
+    "risk": { "level": "low", "categories": [] },
+    "provenance": { "source": "local", "provider": "deterministic-local" },
+    "recommendedDepth": "personal",
+    "interactionPattern": { "reciprocity": "balanced", "pacing": "steady" },
+    "messageOptions": { "firstStyle": "input", "min": 1, "max": 3 },
+    "mutualTopicsInclude": ["宠物"],
+    "minimumUncertainties": 1,
+    "normalGuidanceBlocked": false,
+    "evidence": { "minimumQuoteCount": 2 }
+  }
+}

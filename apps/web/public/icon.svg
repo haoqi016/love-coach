@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="教恋 A Little Closer">
+  <rect width="512" height="512" rx="116" fill="#f6f0e5"/>
+  <path d="M113 331c57-78 112-117 166-117 42 0 82 24 120 73" fill="none" stroke="#df705c" stroke-linecap="round" stroke-width="36"/>
+  <circle cx="177" cy="183" r="38" fill="#26352f"/>
+  <circle cx="335" cy="183" r="38" fill="#789184"/>
+  <path d="M230 355h52" stroke="#26352f" stroke-linecap="round" stroke-width="28"/>
+</svg>

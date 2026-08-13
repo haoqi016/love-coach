@@ -1,0 +1,26 @@
+{
+  "name": "a-little-closer",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.16.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @alc/server --filter @alc/web dev",
+    "start": "node --env-file-if-exists=.env apps/server/dist/index.js",
+    "test:eazo": "pnpm --filter @alc/agent-core build && node --env-file-if-exists=.env scripts/eazo-smoke-test.mjs",
+    "test:model": "pnpm --filter @alc/agent-core build && node --env-file-if-exists=.env scripts/model-smoke-test.mjs",
+    "eval:fixed": "pnpm --filter @alc/agent-core build && node scripts/run-fixed-evals.mjs",
+    "eval:screenshot": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/generate-synthetic-chat-screenshot.ps1",
+    "smoke:production": "pnpm --filter @alc/agent-core build && node scripts/production-path-smoke.mjs",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm --filter @alc/agent-core build && pnpm -r typecheck",
+    "test": "pnpm --filter @alc/agent-core build && pnpm -r test",
+    "lint": "pnpm -r lint"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.8.0",
+    "globals": "17.9.0",
+    "typescript": "^6.0.0",
+    "typescript-eslint": "8.66.0"
+  }
+}

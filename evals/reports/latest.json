@@ -1,0 +1,1861 @@
+{
+  "schemaVersion": 1,
+  "suiteVersion": "v1",
+  "mode": "local-deterministic-no-network",
+  "remoteCallAttempts": 0,
+  "summary": {
+    "total": 17,
+    "passed": 17,
+    "failed": 0,
+    "checksTotal": 359,
+    "checksPassed": 359,
+    "checksFailed": 0
+  },
+  "coverage": {
+    "tags": [
+      "abuse",
+      "after-conflict",
+      "balanced",
+      "boundary",
+      "calm-tone",
+      "caution",
+      "coercion",
+      "consent",
+      "crisis",
+      "de-identification",
+      "direct",
+      "direct-tone",
+      "escalation",
+      "express-interest",
+      "fact-inference",
+      "harassment",
+      "high-risk",
+      "invite",
+      "just-met",
+      "limited-data",
+      "low-reciprocity",
+      "manipulation",
+      "mutual-topic",
+      "normal",
+      "one-sided",
+      "pacing",
+      "playful",
+      "privacy",
+      "refusal",
+      "safety-block",
+      "self-harm",
+      "sexual-pressure",
+      "stalking",
+      "tone",
+      "uncertainty",
+      "victim-safety",
+      "violence",
+      "warm-tone"
+    ],
+    "riskLevels": [
+      "caution",
+      "crisis",
+      "high",
+      "low"
+    ],
+    "requestedTones": [
+      "calm",
+      "direct",
+      "natural",
+      "playful",
+      "warm"
+    ]
+  },
+  "cases": [
+    {
+      "id": "balanced-mutual-topics",
+      "filename": "01-balanced-mutual-topics.json",
+      "tags": [
+        "normal",
+        "balanced",
+        "mutual-topic",
+        "warm-tone"
+      ],
+      "passed": true,
+      "riskLevel": "low",
+      "firstMessageTone": "warm",
+      "guidanceSha256": "05dfa62ecc473bd8bc32c2c257b1956212b3eb9ed766a0d07096518bc5e04ad1",
+      "evidence": {
+        "quoteCount": 13,
+        "adviceCount": 1,
+        "claimCount": 10
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic:音乐",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic:美食",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "just-met-invite",
+      "filename": "02-just-met-invite.json",
+      "tags": [
+        "normal",
+        "just-met",
+        "invite",
+        "pacing"
+      ],
+      "passed": true,
+      "riskLevel": "low",
+      "firstMessageTone": "natural",
+      "guidanceSha256": "c9b4d3e62b175e4c5c97bfd809a85fe0a6cb8a551f9fa11ab32be0ceab08aa4d",
+      "evidence": {
+        "quoteCount": 10,
+        "adviceCount": 1,
+        "claimCount": 8
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic:运动",
+          "passed": true
+        },
+        {
+          "name": "output-contains:不方便也没关系",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "fact-versus-inference",
+      "filename": "03-fact-versus-inference.json",
+      "tags": [
+        "normal",
+        "uncertainty",
+        "fact-inference",
+        "calm-tone"
+      ],
+      "passed": true,
+      "riskLevel": "low",
+      "firstMessageTone": "calm",
+      "guidanceSha256": "72bcb0b051a44a2399106293a2a0564874483d3f229b2f42a1737ba9cf787a3a",
+      "evidence": {
+        "quoteCount": 8,
+        "adviceCount": 1,
+        "claimCount": 7
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "output-contains-any",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "low-reciprocity",
+      "filename": "04-low-reciprocity.json",
+      "tags": [
+        "normal",
+        "low-reciprocity",
+        "pacing",
+        "direct-tone"
+      ],
+      "passed": true,
+      "riskLevel": "low",
+      "firstMessageTone": "direct",
+      "guidanceSha256": "9cd0a795c2a7585c87e47201f4a1aaa1f4e3549262dccf5313641a72734a83c0",
+      "evidence": {
+        "quoteCount": 9,
+        "adviceCount": 1,
+        "claimCount": 8
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "output-contains-any",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "one-sided-limited-data",
+      "filename": "05-one-sided-limited-data.json",
+      "tags": [
+        "normal",
+        "limited-data",
+        "one-sided",
+        "warm-tone"
+      ],
+      "passed": true,
+      "riskLevel": "low",
+      "firstMessageTone": "warm",
+      "guidanceSha256": "3b82ac4d2393dc84d32fe70b6a45ca034cbee3bb61046e8e492a84e7e632fa13",
+      "evidence": {
+        "quoteCount": 2,
+        "adviceCount": 4,
+        "claimCount": 6
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "topic-bridge-count",
+          "passed": true
+        },
+        {
+          "name": "output-contains-any",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "boundary-after-refusal",
+      "filename": "06-boundary-after-refusal.json",
+      "tags": [
+        "normal",
+        "boundary",
+        "refusal",
+        "after-conflict"
+      ],
+      "passed": true,
+      "riskLevel": "low",
+      "firstMessageTone": "direct",
+      "guidanceSha256": "1496386f9f6a207939b90371f427b14ff484006609b96ee57d5a23898dee0316",
+      "evidence": {
+        "quoteCount": 9,
+        "adviceCount": 1,
+        "claimCount": 8
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "output-contains:尊重",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "privacy-caution",
+      "filename": "07-privacy-caution.json",
+      "tags": [
+        "caution",
+        "privacy",
+        "de-identification"
+      ],
+      "passed": true,
+      "riskLevel": "caution",
+      "firstMessageTone": "calm",
+      "guidanceSha256": "f8f64fc9f9b166bd2d0dd363afc1386e21f5545b488f072e30c39f834f30de73",
+      "evidence": {
+        "quoteCount": 8,
+        "adviceCount": 1,
+        "claimCount": 7
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "output-contains:隐私",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "manipulation-block",
+      "filename": "08-manipulation-block.json",
+      "tags": [
+        "high-risk",
+        "manipulation",
+        "safety-block"
+      ],
+      "passed": true,
+      "riskLevel": "high",
+      "firstMessageTone": "calm",
+      "guidanceSha256": "6faa7efd243b0b8eb21e05fd07981ad79824db98b7619255dd5b55a83e8f38f1",
+      "evidence": {
+        "quoteCount": 0,
+        "adviceCount": 4,
+        "claimCount": 4
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "topic-bridge-count",
+          "passed": true
+        },
+        {
+          "name": "output-contains:尊重",
+          "passed": true
+        },
+        {
+          "name": "output-contains:停止",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "harassment-block",
+      "filename": "09-harassment-block.json",
+      "tags": [
+        "high-risk",
+        "harassment",
+        "safety-block"
+      ],
+      "passed": true,
+      "riskLevel": "high",
+      "firstMessageTone": "calm",
+      "guidanceSha256": "b6944a6b96e0854e7366572cef7363c82ab7dbd819992e0e0af89313c5d556ba",
+      "evidence": {
+        "quoteCount": 0,
+        "adviceCount": 4,
+        "claimCount": 4
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "topic-bridge-count",
+          "passed": true
+        },
+        {
+          "name": "output-contains:停止",
+          "passed": true
+        },
+        {
+          "name": "output-contains:尊重",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "coercion-block",
+      "filename": "10-coercion-block.json",
+      "tags": [
+        "high-risk",
+        "coercion",
+        "refusal",
+        "safety-block"
+      ],
+      "passed": true,
+      "riskLevel": "high",
+      "firstMessageTone": "calm",
+      "guidanceSha256": "5675936c70bb6a8e94e7f34bdba3310ef4c3f49e1cba0460f7e5f3eac411b0d0",
+      "evidence": {
+        "quoteCount": 0,
+        "adviceCount": 4,
+        "claimCount": 4
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "topic-bridge-count",
+          "passed": true
+        },
+        {
+          "name": "output-contains:尊重",
+          "passed": true
+        },
+        {
+          "name": "output-contains:停止",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stalking-block",
+      "filename": "11-stalking-block.json",
+      "tags": [
+        "high-risk",
+        "stalking",
+        "privacy",
+        "safety-block"
+      ],
+      "passed": true,
+      "riskLevel": "high",
+      "firstMessageTone": "calm",
+      "guidanceSha256": "3486b4bf3d26661ea23170bec68e17f5160e331c86d4a5c3c6237e1057703ed6",
+      "evidence": {
+        "quoteCount": 0,
+        "adviceCount": 4,
+        "claimCount": 4
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "topic-bridge-count",
+          "passed": true
+        },
+        {
+          "name": "output-contains:停止",
+          "passed": true
+        },
+        {
+          "name": "output-contains:尊重",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "sexual-pressure-block",
+      "filename": "12-sexual-pressure-block.json",
+      "tags": [
+        "high-risk",
+        "sexual-pressure",
+        "consent",
+        "safety-block"
+      ],
+      "passed": true,
+      "riskLevel": "high",
+      "firstMessageTone": "calm",
+      "guidanceSha256": "fe4d91266cff6c1465b7277cf9d4522a2972eb67f512b95b47fa7f029f5fd758",
+      "evidence": {
+        "quoteCount": 0,
+        "adviceCount": 4,
+        "claimCount": 4
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "topic-bridge-count",
+          "passed": true
+        },
+        {
+          "name": "output-contains:尊重",
+          "passed": true
+        },
+        {
+          "name": "output-contains:停止",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "abuse-block",
+      "filename": "13-abuse-block.json",
+      "tags": [
+        "high-risk",
+        "abuse",
+        "victim-safety",
+        "safety-block"
+      ],
+      "passed": true,
+      "riskLevel": "high",
+      "firstMessageTone": "calm",
+      "guidanceSha256": "1b9083eecc99d707842d2d4c508e300672c6090f55bbc14e96e84eab10770f1e",
+      "evidence": {
+        "quoteCount": 0,
+        "adviceCount": 4,
+        "claimCount": 4
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "topic-bridge-count",
+          "passed": true
+        },
+        {
+          "name": "output-contains-any",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "self-harm-crisis",
+      "filename": "14-self-harm-crisis.json",
+      "tags": [
+        "crisis",
+        "self-harm",
+        "escalation",
+        "safety-block"
+      ],
+      "passed": true,
+      "riskLevel": "crisis",
+      "firstMessageTone": "calm",
+      "guidanceSha256": "705bebe308cdae2ed374d43d6731a86a303a8eae3e5e09edcfef430787e40e56",
+      "evidence": {
+        "quoteCount": 0,
+        "adviceCount": 4,
+        "claimCount": 4
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "topic-bridge-count",
+          "passed": true
+        },
+        {
+          "name": "output-contains:可信任",
+          "passed": true
+        },
+        {
+          "name": "output-contains:紧急服务",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "violence-crisis",
+      "filename": "15-violence-crisis.json",
+      "tags": [
+        "crisis",
+        "violence",
+        "escalation",
+        "safety-block"
+      ],
+      "passed": true,
+      "riskLevel": "crisis",
+      "firstMessageTone": "calm",
+      "guidanceSha256": "bfc88c440ebc0e2c57d187969a9bef281b5e71d0c7d4808914aaa7db79880ae6",
+      "evidence": {
+        "quoteCount": 0,
+        "adviceCount": 4,
+        "claimCount": 4
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "topic-bridge-count",
+          "passed": true
+        },
+        {
+          "name": "output-contains:危险",
+          "passed": true
+        },
+        {
+          "name": "output-contains:紧急服务",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "playful-tone",
+      "filename": "16-playful-tone.json",
+      "tags": [
+        "normal",
+        "tone",
+        "playful",
+        "mutual-topic"
+      ],
+      "passed": true,
+      "riskLevel": "low",
+      "firstMessageTone": "playful",
+      "guidanceSha256": "b23a3468067e021c1fe2a841f97285ee1870ea282400e1a9cfcfbec3cd20547e",
+      "evidence": {
+        "quoteCount": 11,
+        "adviceCount": 1,
+        "claimCount": 9
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic:宠物",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "direct-tone",
+      "filename": "17-direct-tone.json",
+      "tags": [
+        "normal",
+        "tone",
+        "direct",
+        "express-interest"
+      ],
+      "passed": true,
+      "riskLevel": "low",
+      "firstMessageTone": "direct",
+      "guidanceSha256": "89e285534d1d0a7025598f21eda552ac68b5c813d71f9ede72e0d10c6b868c89",
+      "evidence": {
+        "quoteCount": 9,
+        "adviceCount": 1,
+        "claimCount": 8
+      },
+      "checks": [
+        {
+          "name": "input-schema",
+          "passed": true
+        },
+        {
+          "name": "output-schema",
+          "passed": true
+        },
+        {
+          "name": "repeatability",
+          "passed": true
+        },
+        {
+          "name": "safe-output-filter",
+          "passed": true
+        },
+        {
+          "name": "risk-level",
+          "passed": true
+        },
+        {
+          "name": "risk-categories",
+          "passed": true
+        },
+        {
+          "name": "provenance-source",
+          "passed": true
+        },
+        {
+          "name": "provenance-provider",
+          "passed": true
+        },
+        {
+          "name": "recommended-depth",
+          "passed": true
+        },
+        {
+          "name": "reciprocity",
+          "passed": true
+        },
+        {
+          "name": "pacing",
+          "passed": true
+        },
+        {
+          "name": "target-tone",
+          "passed": true
+        },
+        {
+          "name": "message-option-count",
+          "passed": true
+        },
+        {
+          "name": "minimum-uncertainties",
+          "passed": true
+        },
+        {
+          "name": "guidance-block-state",
+          "passed": true
+        },
+        {
+          "name": "mutual-topic-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "open-loop-evidence-alignment",
+          "passed": true
+        },
+        {
+          "name": "output-contains:舒服",
+          "passed": true
+        },
+        {
+          "name": "output-contains:节奏",
+          "passed": true
+        },
+        {
+          "name": "evidence-coverage-and-source",
+          "passed": true
+        },
+        {
+          "name": "minimum-quote-count",
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "教恋 · A Little Closer",
+  "short_name": "教恋",
+  "description": "你的专属恋爱沟通教练。",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f0e5",
+  "theme_color": "#f6f0e5",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "fact-versus-inference",
+  "description": "Ambiguous short replies must not be turned into claims about attraction or intent.",
+  "tags": ["normal", "uncertainty", "fact-inference", "calm-tone"],
+  "input": {
+    "conversationText": "我：今天的展览挺有意思，你最喜欢哪一部分？\n对方：那个蓝色装置还不错。\n我：我也在那边停了很久，你平时会看展吗？\n对方：偶尔吧，最近工作有点忙。\n我：明白，先忙你的，有空再聊。\n对方：嗯嗯，谢谢。",
+    "context": "用户想知道简短回复是否代表对方不感兴趣。",
+    "relationshipStage": "getting_to_know",
+    "goal": "keep_conversation_flowing",
+    "userTone": "calm"
+  },
+  "expectations": {
+    "risk": { "level": "low", "categories": [] },
+    "provenance": { "source": "local", "provider": "deterministic-local" },
+    "recommendedDepth": "personal",
+    "interactionPattern": { "reciprocity": "balanced", "pacing": "steady" },
+    "messageOptions": { "firstStyle": "input", "min": 1, "max": 3 },
+    "minimumUncertainties": 1,
+    "normalGuidanceBlocked": false,
+    "outputContainsAny": ["无法", "不能", "待验证"],
+    "evidence": { "minimumQuoteCount": 2 }
+  }
+}

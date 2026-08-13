@@ -1,0 +1,23 @@
+{
+  "id": "balanced-mutual-topics",
+  "description": "Balanced conversation with two topics mentioned by both speakers.",
+  "tags": ["normal", "balanced", "mutual-topic", "warm-tone"],
+  "input": {
+    "conversationText": "我：你上次说的那家咖啡店我去试了，音乐很好听。\n对方：真的呀，我也很喜欢那里的咖啡和周末歌单。\n我：你最喜欢哪一首歌？我想补进自己的通勤列表。\n对方：最近常听一首轻快的歌，下次把名字发给你。\n我：好呀，我也可以把最近发现的咖啡豆分享给你。\n对方：可以，我们之后交换一下清单。",
+    "context": "双方在共同兴趣群认识，最近偶尔聊天。",
+    "relationshipStage": "getting_to_know",
+    "goal": "deepen_connection",
+    "userTone": "warm"
+  },
+  "expectations": {
+    "risk": { "level": "low", "categories": [] },
+    "provenance": { "source": "local", "provider": "deterministic-local" },
+    "recommendedDepth": "personal",
+    "interactionPattern": { "reciprocity": "balanced", "pacing": "steady" },
+    "messageOptions": { "firstStyle": "input", "min": 1, "max": 3 },
+    "mutualTopicsInclude": ["音乐", "美食"],
+    "minimumUncertainties": 1,
+    "normalGuidanceBlocked": false,
+    "evidence": { "minimumQuoteCount": 2 }
+  }
+}

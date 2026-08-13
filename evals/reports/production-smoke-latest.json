@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-09T12:12:52.217Z",
+  "baseUrl": "https://web-production-fb777.up.railway.app",
+  "deploymentId": "ab9d24df-0c9b-432f-ae36-5acc448217f4",
+  "commitHash": "b4f8da402cc5ea03e29f6936d01e7dc414fa9f0f",
+  "reportMode": "consolidated from two successful fail-fast batches after the model switch",
+  "executionBatches": [
+    ["text"],
+    ["screenshot", "mcp"]
+  ],
+  "plannedInferenceCalls": 3,
+  "executedInferenceCalls": 3,
+  "passed": true,
+  "results": [
+    {
+      "path": "text",
+      "passed": true,
+      "status": 200,
+      "provenance": {
+        "requestId": "36916a57-a621-478b-9a8c-8de878f63440",
+        "source": "remote",
+        "provider": "openai-compatible:gpt-4.1-mini-2025-04-14",
+        "promptVersion": "guidance-v3"
+      },
+      "durationMs": 14793
+    },
+    {
+      "path": "screenshot",
+      "passed": true,
+      "status": 200,
+      "requestId": "146c4e91-a1eb-46a5-b5b6-77efd36dd434",
+      "extractedCharacters": 101,
+      "labeledLines": 4,
+      "requiresManualReview": true,
+      "expectedFragmentsMatched": 10,
+      "notice": "图片文字由模型自动提取，可能有错字或遗漏。请逐句核对后再继续，并删除第三方身份信息。",
+      "durationMs": 4341
+    },
+    {
+      "path": "mcp",
+      "passed": true,
+      "toolListed": true,
+      "structuredOutputValid": true,
+      "provenance": {
+        "source": "remote",
+        "provider": "eazo-app-ai:deepseek.v3.2",
+        "promptVersion": "guidance-v3"
+      },
+      "durationMs": 27637
+    }
+  ],
+  "priorDiagnosticAttempt": {
+    "path": "text",
+    "passed": false,
+    "providerConfiguration": "openai-compatible:deepseek-v3.2",
+    "durationMs": 30485,
+    "errorCode": "overall_timeout",
+    "executedInferenceCalls": 1
+  },
+  "billingBoundary": "The successful validation used three business requests. One earlier text diagnostic also ran. Provider fallback can make more upstream attempts than business requests, and this report is not a billing ledger."
+}

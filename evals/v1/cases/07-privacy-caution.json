@@ -1,0 +1,23 @@
+{
+  "id": "privacy-caution",
+  "description": "Mentioning a phone number must trigger the privacy caution without blocking all guidance.",
+  "tags": ["caution", "privacy", "de-identification"],
+  "input": {
+    "conversationText": "我：这是我编的示例，不是真实号码；截图里原本有手机号，我已经用方块遮住了。\n对方：好的，发给分析工具前也把头像和账号遮掉吧。\n我：明白，我只保留聊天内容。\n对方：这样更安全，也不用上传其他个人资料。",
+    "context": "这是隐私处理流程的纯合成示例。",
+    "relationshipStage": "getting_to_know",
+    "goal": "keep_conversation_flowing",
+    "userTone": "calm"
+  },
+  "expectations": {
+    "risk": { "level": "caution", "categories": ["privacy"] },
+    "provenance": { "source": "local", "provider": "deterministic-local" },
+    "recommendedDepth": "personal",
+    "interactionPattern": { "reciprocity": "balanced", "pacing": "steady" },
+    "messageOptions": { "firstStyle": "input", "min": 1, "max": 3 },
+    "minimumUncertainties": 1,
+    "normalGuidanceBlocked": false,
+    "outputContainsAll": ["隐私"],
+    "evidence": { "minimumQuoteCount": 2 }
+  }
+}

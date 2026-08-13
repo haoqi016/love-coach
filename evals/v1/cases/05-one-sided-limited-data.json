@@ -1,0 +1,24 @@
+{
+  "id": "one-sided-limited-data",
+  "description": "One-sided pasted text must be treated as insufficient interaction evidence.",
+  "tags": ["normal", "limited-data", "one-sided", "warm-tone"],
+  "input": {
+    "conversationText": "我：你好，刚才在活动上认识你很开心。\n我：你提到最近在学做饭，我也刚开始练习。\n我：如果你愿意，以后可以交流一下失败经验。\n我：不用急着回复，祝你今晚休息好。",
+    "context": "只有用户自己发出的消息，没有对方回复。",
+    "relationshipStage": "just_met",
+    "goal": "start_conversation",
+    "userTone": "warm"
+  },
+  "expectations": {
+    "risk": { "level": "low", "categories": [] },
+    "provenance": { "source": "local", "provider": "deterministic-local" },
+    "recommendedDepth": "light",
+    "interactionPattern": { "reciprocity": "limited_data", "pacing": "limited_data" },
+    "messageOptions": { "firstStyle": "input", "min": 1, "max": 3 },
+    "topicBridgeCount": { "min": 0, "max": 0 },
+    "minimumUncertainties": 2,
+    "normalGuidanceBlocked": false,
+    "outputContainsAny": ["不足", "缺少"],
+    "evidence": { "minimumQuoteCount": 1 }
+  }
+}
